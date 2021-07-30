@@ -1,6 +1,8 @@
-package main.java.com.mphasis.cui.components;
+package com.mphasis.cui.components;
 
-public class TwitterService implements Message{
+
+
+public class TwitterService implements Message {
     public TwitterService() {
         System.out.println("This is twitter instantiated");
     }

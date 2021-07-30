@@ -2,14 +2,18 @@ package com.mphasis.cui.components;
 
 public class TextEditor {
     private SpellChecker spellChecker;
-    public TextEditor(){
-        System.out.println("Default Constructor");
-    }
-    public TextEditor(SpellChecker spellChecker) {
-        System.out.println("Inside TextEditor Constructor");
-        this.spellChecker = spellChecker;
-    }
+    private String name;
 
+    public TextEditor( SpellChecker spellChecker, String name ) {
+        this.spellChecker = spellChecker;
+        this.name = name;
+    }
+    public SpellChecker getSpellChecker() {
+        return spellChecker;
+    }
+    public String getName() {
+        return name;
+    }
     public void spellCheck() {
         spellChecker.checkSpelling();
     }

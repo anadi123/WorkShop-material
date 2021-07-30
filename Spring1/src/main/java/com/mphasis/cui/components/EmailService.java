@@ -1,4 +1,4 @@
-package main.java.com.mphasis.cui.components;
+package com.mphasis.cui.components;
 
 public class EmailService implements Message{
     public EmailService() {
